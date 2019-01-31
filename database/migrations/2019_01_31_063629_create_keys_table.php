@@ -18,6 +18,7 @@ class CreateKeysTable extends Migration
             $table->integer('user_id');
             $table->integer('game_id');
             $table->string('token');
+            $table->longText('hwid')->nullable();
             $table->string('expiration');
             $table->timestamps();
         });
